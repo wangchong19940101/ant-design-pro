@@ -10,7 +10,7 @@
     "presite": "cd functions && npm install",
     "start": "cross-env APP_TYPE=site PORT=9001 umi dev",
     "start:no-mock": "cross-env MOCK=none umi dev",
-    "build": "PORT=9001 umi build",
+    "build": "umi build",
     "site": "npm run presite && cross-env APP_TYPE=site npm run build && firebase deploy && npm run docker:push",
     "analyze": "cross-env ANALYZE=1 umi build",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",
