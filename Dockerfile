@@ -9,4 +9,4 @@ COPY ./ ./
 
 RUN npm run test:all
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "build"]
